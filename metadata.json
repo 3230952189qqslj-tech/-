@@ -1,0 +1,7 @@
+{
+  "name": "晶晶写真 - 智能人像写真平台",
+  "description": "一款基于AI的专业人像写真生成平台，支持面部自动匹配、发型定制及多种风格变换，提供现代简约的交互体验。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
