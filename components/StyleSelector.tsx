@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { PORTRAIT_STYLES } from '../constants';
+import { PORTRAIT_STYLES } from '../constants.tsx';
 
 interface StyleSelectorProps {
   selectedStyleId: string;

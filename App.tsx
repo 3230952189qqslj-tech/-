@@ -1,11 +1,11 @@
 
-import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import CapturePanel from './components/CapturePanel';
-import StyleSelector from './components/StyleSelector';
-import { PortraitStyle, GeneratedImage, UserState } from './types';
-import { PORTRAIT_STYLES } from './constants';
-import { generatePortrait } from './services/geminiService';
+import React, { useState } from 'react';
+import Header from './components/Header.tsx';
+import CapturePanel from './components/CapturePanel.tsx';
+import StyleSelector from './components/StyleSelector.tsx';
+import { GeneratedImage, UserState } from './types.ts';
+import { PORTRAIT_STYLES } from './constants.tsx';
+import { generatePortrait } from './services/geminiService.ts';
 
 const App: React.FC = () => {
   const [userState, setUserState] = useState<UserState>({
@@ -69,7 +69,6 @@ const App: React.FC = () => {
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
           
-          {/* Left Column: Configuration */}
           <div className="lg:col-span-5 space-y-8">
             <section>
               <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
@@ -163,7 +162,6 @@ const App: React.FC = () => {
             </button>
           </div>
 
-          {/* Right Column: Results Gallery */}
           <div className="lg:col-span-7">
             <div className="sticky top-24">
               <div className="flex items-center justify-between mb-6">
@@ -224,7 +222,6 @@ const App: React.FC = () => {
               )}
             </div>
           </div>
-
         </div>
       </main>
     </div>
